@@ -1,0 +1,27 @@
+% if @result  %>
+  <h1>The result is <%= @result %></h1>
+<% end %>
+<br>
+<form method="get" action="/length_converter">
+<input type="number" name="input" placeholder="units" step="0.01">
+<select name="first_unit">
+  <option value="centimeter">centimeters</option>
+  <option value="metre">meters</option>
+  <option value="kilometer">kilometers</option>
+  <option value="inch">inches</option>
+  <option value="foot">feet</option>
+  <option value="yard">yards</option>
+  <option value="mile">miles</option>
+</select>
+to
+<select name="second_unit">
+  <option value="centimeter">centimeters</option>
+  <option value="metre">meters</option>
+  <option value="kilometer">kilometers</option>
+  <option value="inch">inches</option>
+  <option value="foot">feet</option>
+  <option value="yard">yards</option>
+  <option value="mile">miles</option>
+</select>
+<button>calculate</button>
+</form>
