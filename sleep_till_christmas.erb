@@ -1,1 +1,8 @@
-<%= "The sleeps of days until Christmas is #{@sleeps_till_christmas}" %>
+<h1>"The sleeps till christmas calculator"</h1>
+
+<h2><% if @result %>
+<h2><%= "The sleeps of days until Christmas is #{@sleeps_till_christmas}" %></h1>
+<form method="get" action="/date_of_birth"> 
+<input type="number" name="dd/mm/yyy" placeholder="dd/mm/yyyy" >
+</form>
+
